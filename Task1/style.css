@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height:100%;
+    min-height: 100vh;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+
+h2{  color:black;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-size: 4rem;
+    padding-top: 0.5%;
+}
+
+h3{
+    color: black;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 3rem;
+    padding-top: 1px;
+
+}
+.box1{
+    padding-top: 5px;
+}
+.box{
+    position: sticky;
+    width:600px;
+    padding:15px;
+    justify-content: center;
+    /* box-sizing: border-box; */
+    background: linear-gradient(to bottom, #ccccff 0%, #ffcccc 100%);
+    box-shadow: 0 10px 32px 0 rgba(246, 246, 247, 0.37);
+    backdrop-filter: blur(4px);
+    /* border: 2px solid rgba(255, 255, 255, 0.322);  */
+    
+}
+.init{
+    width: 480px;
+    height: 44px;
+    border: none;
+    outline: none;
+    /* border-bottom: 2px solid #fff; */
+    background: transparent;
+    /* padding-right: 10px; */
+    font-size: 40px;
+    font-family: Brush Script MT, Brush Script Std, cursive	;
+    color:black;
+  
+}
+.btn{
+    
+    width: 64px;
+    height: 34px;
+    background:	#ff6f69;
+    font-family: Brush Script MT, Brush Script Std, cursive	;
+    color:  black;
+    font-size: 30px;
+    border-radius: 10px;
+    
+}
+
+.lists{
+    
+    background-image: url('background-image.jpg');
+    opacity: 0.8;
+    display:flex;
+    height: 380px;
+    width:600px;
+    justify-content: center;
+    overflow: auto; 
+    background-color:  linear-gradient(to bottom, #ccccff 0%, #ffcccc 100%);
+    
+}
+.done{
+    background-color: chartreuse;
+}
+
