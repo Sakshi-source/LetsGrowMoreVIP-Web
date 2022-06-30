@@ -1,0 +1,101 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Student Semester report form</title>
+</head>
+
+<body>
+    <div class="Heading">
+            <h2 style="margin:1%">Students Registration form</h2>
+    </div>
+    <div class=" form-body">
+        <form class="lform">
+            <div>
+                <div class="dis">
+                    <div class="user-box">
+                        <label><b>Email</b></label><br>
+                        <input type="email" id="email" required="">
+                    </div>
+                    <div class="user-box">
+                        <label><b>Roll Number</b></label><br>
+                        <input type="tel" id="RollNumber" required="">
+                    </div>
+                </div>
+
+                <div class="dis">
+                    <div class="user-box">
+                        <label><b>First Name</b> </label><br>
+                        <input type="text" id="fname" required="">
+                    </div>
+                    <div class="user-box">
+                        <label><b>Last Name</b></label><br>
+                        <input type="text" id="lname" required="">
+                    </div>
+                </div>
+                <div class="dis">
+                    <div class="user-box">
+                        <label><b>Branch</b></label><br>
+                        <input list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                            <option value="CSE">
+                            <option value="IT">
+                            <option value="ECE">
+                            <option value="ME">
+                        </datalist>
+                    </div>
+
+                    <div class="user-box">
+                        <label><b>Section</b></label><br>
+                        <input type="text" id="section" required="">
+                    </div>
+                </div>
+                <div class="dis">
+                    <div class="user-box">
+                        <label for="semester"><b>Passing Year</b></label><br>
+
+                        <select id="semester">
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </div>
+                    <div class="user-box">
+                        <label for="status"><b>Position</b></label><br>
+
+                        <select id="status">
+                            <option value="SDE">SDE</option>
+                            <option value="Front-End">Front-End</option>
+                            <option value="Back-end">Back-End</option>
+
+                        </select>
+                    </div>
+                    <div class="user-box">
+                        <label><b>SGPA</b></label><br>
+                        <input type="number" id="spga" required="">
+                    </div>
+                    <div class="user-box">
+                        <label><b>No. of backlogs</b></label><br>
+                        <input type="number" id="backlog" required="">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="buttons">
+            <button id="button" style="margin-top: 10px;">Submit</button>
+        </div>
+    </div>
+    <div class="heading">
+        <h2 style="margin:1%">Registered Students</h2>
+    </div>
+    <div class="container">
+        <span class="Box">
+
+        </span>
+    </div>
+    <script src="script.js"> </script>
+</body>
+
+</html>
